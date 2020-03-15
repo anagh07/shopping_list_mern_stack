@@ -1,20 +1,20 @@
 
 # How to get started:
-### Install server dependencies at root folder:
+#### Install server dependencies at root folder:
     npm i
 
-### Install dev dependencies at root:
+#### Install dev dependencies at root:
     npm i -D
 
-### Install client dependencies at client folder:
+#### Install client dependencies at client folder:
     cd client
     npm install
 
-### To run the program in dev mode:
+#### To run the program in dev mode:
     npm run dev
 
-### To run client:
+#### To run client:
     npm run client
 
-### To run server:
+#### To run server:
     npm run server
