@@ -1,5 +1,5 @@
-# Install server dependencies at root folder:
-    npm i
+** Install server dependencies at root folder: **
+    `npm i`
 
 Install dev dependencies at root:
     npm i -D
