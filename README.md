@@ -1,4 +1,11 @@
 
+# Description
+A full-stack simple wishlist application made with MERN.
+- React and Redux in the front end.
+- MongoDB as the database.
+- Node and Express for the backend.
+
+
 # How to get started:
 #### Install server dependencies at root folder:
     npm i
