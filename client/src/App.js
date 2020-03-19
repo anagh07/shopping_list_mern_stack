@@ -4,16 +4,21 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import AppNavBar from "./components/AppNavBar";
 import ShoppingList from "./components/ShoppingList";
+import AddItemForm from "./components/AddItemForm";
 
-import store from './store';
+import store from "./store";
 import { Provider } from "react-redux";
+import { Container } from "reactstrap";
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
         <AppNavBar />
-        <ShoppingList />
+        <Container>
+          <AddItemForm />
+          <ShoppingList />
+        </Container>
       </div>
     </Provider>
   );
