@@ -10,18 +10,24 @@ import store from "./store";
 import { Provider } from "react-redux";
 import { Container } from "reactstrap";
 
-function App() {
-  return (
-    <Provider store={store}>
-      <div className="App">
-        <AppNavBar />
-        <Container>
-          <AddItemForm />
-          <ShoppingList />
-        </Container>
-      </div>
-    </Provider>
-  );
+class App extends React.Component {
+  componentDidMount() {
+    document.title = "List App";
+  }
+  
+  render() {
+    return (
+      <Provider store={store}>
+        <div className="App">
+          <AppNavBar />
+          <Container>
+            <AddItemForm />
+            <ShoppingList />
+          </Container>
+        </div>
+      </Provider>
+    );
+  }
 }
 
 export default App;
