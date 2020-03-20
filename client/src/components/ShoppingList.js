@@ -36,8 +36,8 @@ class ShoppingList extends Component {
 
         <ListGroup>
           <TransitionGroup className="shopping-list">
-            {items.map(({ id, name }) => (
-              <CSSTransition key={id} timeout={300} classNames="item">
+            {items.map(({ _id, name }) => (
+              <CSSTransition key={_id} timeout={300} classNames="item">
                 <ListGroupItem className="itemEntry">
                   {name}
                   <Button
@@ -45,7 +45,7 @@ class ShoppingList extends Component {
                     size="sm"
                     outline
                     color="danger"
-                    onClick={this.onClickDelete.bind(this, id)}
+                    onClick={this.onClickDelete.bind(this, _id)}
                   >
                     &times;
                   </Button>

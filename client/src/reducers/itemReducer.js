@@ -1,29 +1,35 @@
 import { v4 as uuidv4 } from "uuid";
-import { GET_ITEMS, DELETE_ITEM, ADD_ITEM } from "../actions/types";
+import { GET_ITEMS, DELETE_ITEM, ADD_ITEM, ITEMS_LOADING } from "../actions/types";
 
 const initialState = {
-  items: [
-    { id: uuidv4(), name: "Tomatoes" },
-    { id: uuidv4(), name: "Tuna" },
-    { id: uuidv4(), name: "Chicken" },
-    { id: uuidv4(), name: "Eggs" }
-  ]
+  items: [],
+  loading: false
 };
 
 export default function(state = initialState, action) {
   switch (action.type) {
     case GET_ITEMS:
-      return { ...state };
+      return { 
+        ...state,
+        items: action.payload,
+        loading: false
+       };
 
     case DELETE_ITEM:
       return {
         ...state,
-        items: state.items.filter(item => item.id !== action.payload)
+        items: state.items.filter(item => item._id !== action.payload)
       };
 
     case ADD_ITEM:
       return {
         items: [action.payload, ...state.items]
+      }
+
+    case ITEMS_LOADING:
+      return {
+        ...state,
+        loading: true
       }
 
     default:
