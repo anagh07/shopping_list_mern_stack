@@ -22,7 +22,7 @@ app.use("/api/items", item);
 // Serve static prod build
 if (process.env.NODE_ENV === "production") {
   // Set the folder for static build
-  app.use(express.static("/client/build"));
+  app.use(express.static("client/build"));
 
   // Serve all req except api requests with the static prod build
   app.get("*", (req, res) => {
