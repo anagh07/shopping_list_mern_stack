@@ -5,6 +5,9 @@ A full-stack simple wishlist application made with MERN.
 - MongoDB as the database.
 - Node and Express for the backend.
 
+## Live version:
+https://mernlistapp.herokuapp.com/
+
 
 # How to get started:
 #### Install server dependencies at root folder:
