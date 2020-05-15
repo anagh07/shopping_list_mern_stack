@@ -7,7 +7,7 @@ A full-stack simple wishlist application made with MERN.
 
 ## Live version:
 https://mernlistapp.herokuapp.com/
-![Shopping List](https://imgur.com/Oyrs7ND)
+![](mern_shopping.gif)
 
 
 ## How to get started:
