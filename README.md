@@ -7,8 +7,10 @@ A full-stack simple wishlist application made with MERN.
 
 ## Live version:
 https://mernlistapp.herokuapp.com/
-![](mern_shopping.gif)
 
+<p align="center">
+  <img width="460" height="300" src="mern_shopping.gif">
+</p>
 
 ## How to get started:
 #### Install server dependencies at root folder:
