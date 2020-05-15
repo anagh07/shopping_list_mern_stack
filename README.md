@@ -1,5 +1,5 @@
 
-# Description
+## Description
 A full-stack simple wishlist application made with MERN.
 - React and Redux in the front end.
 - MongoDB as the database.
@@ -7,9 +7,10 @@ A full-stack simple wishlist application made with MERN.
 
 ## Live version:
 https://mernlistapp.herokuapp.com/
+![Shopping List](https://imgur.com/Oyrs7ND)
 
 
-# How to get started:
+## How to get started:
 #### Install server dependencies at root folder:
     npm i
 
