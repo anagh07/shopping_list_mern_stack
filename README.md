@@ -9,7 +9,7 @@ A full-stack simple wishlist application made with MERN.
 https://mernlistapp.herokuapp.com/
 
 <p align="center">
-  <img width="460" height="300" src="mern_shopping.gif">
+  <img width="460" height="300" src="ui_demo.gif">
 </p>
 
 ## How to get started:
